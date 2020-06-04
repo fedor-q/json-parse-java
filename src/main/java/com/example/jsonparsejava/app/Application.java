@@ -24,6 +24,6 @@ public class Application {
 
     public static int getVersion() throws IOException {
 
-        return JsonHelper.getJson(Consts.URL).getInt("version");
+        return JsonHelper.getJson(Consts.URL).getInt(Consts.VERSION_JSON_FIELD_NAME);
     }
 }
